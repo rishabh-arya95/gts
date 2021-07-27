@@ -8,5 +8,7 @@ postrun:
 premerge: 
   - build/test/*.js
 prerun: 
-  - "npm ci"
+  - npm ci
+  - sleep 30
+  - npm run build
 version: 2.0
